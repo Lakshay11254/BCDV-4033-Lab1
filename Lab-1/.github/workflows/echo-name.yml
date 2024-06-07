@@ -1,0 +1,13 @@
+name: Echo Name Workflow
+
+on: push
+
+jobs:
+  echo_name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Echo my name
+        run: echo "Your Name"
